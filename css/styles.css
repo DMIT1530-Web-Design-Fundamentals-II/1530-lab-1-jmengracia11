@@ -118,25 +118,20 @@ aside {
 
 /* Mobile View */
 @media screen and (max-width: 768px) {
-    .flex-container, aside {
-        flex: 1 1 100%;
-        max-width: 100%;
+    .wide-flex {
+        flex-direction: column;
+    }
+
+    .flex-container {
+        flex-direction: column;
     }
 
     section {
-        flex-direction: column;
-        align-items: flex-start;
         margin: 1rem 0;
     }
 
-    section img {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    section div {
-        width: 100%;
+    aside {
+        margin: 1rem 0;
     }
 }
 
